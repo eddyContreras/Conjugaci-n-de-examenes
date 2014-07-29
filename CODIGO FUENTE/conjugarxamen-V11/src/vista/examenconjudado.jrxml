@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0d001d05-e65a-4169-934a-df232f31ffb9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     examenconjugar.`tituloexamen` AS examenconjugar_tituloexamen,
+     examenconjugar.`titulopregunta` AS examenconjugar_titulopregunta,
+     examenconjugar.`respclave` AS examenconjugar_respclave,
+     examenconjugar.`altera` AS examenconjugar_altera,
+     examenconjugar.`alterb` AS examenconjugar_alterb,
+     examenconjugar.`alterc` AS examenconjugar_alterc,
+     examenconjugar.`alterd` AS examenconjugar_alterd,
+     examenconjugar.`altere` AS examenconjugar_altere
+FROM
+     `examenconjugar` examenconjugar]]>
+	</queryString>
+	<field name="examenconjugar_tituloexamen" class="java.lang.String"/>
+	<field name="examenconjugar_titulopregunta" class="java.lang.String"/>
+	<field name="examenconjugar_respclave" class="java.lang.String"/>
+	<field name="examenconjugar_altera" class="java.lang.String"/>
+	<field name="examenconjugar_alterb" class="java.lang.String"/>
+	<field name="examenconjugar_alterc" class="java.lang.String"/>
+	<field name="examenconjugar_alterd" class="java.lang.String"/>
+	<field name="examenconjugar_altere" class="java.lang.String"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="57">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="67" backcolor="#006699" uuid="3db9a18d-c20d-4116-ac58-23567bc9895a"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="f5d3d61a-2f5f-420e-9bcb-75ac6e48dcdf"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TITLE]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="4c90157b-9982-473f-8b09-cccf1952bf44"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Add a description here]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="296" y="20" width="99" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4214574a-d03a-484e-a1a6-ccfecd3c2640"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[examenconjugar_tituloexamen]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="1aebe7c8-207d-4379-8aff-3c4e8bbf7801"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="92" y="0" width="99" height="20" uuid="61b9352f-c35b-4481-ad8c-5b2a8959a034"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenconjugar_tituloexamen}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="152">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="31" y="46" width="69" height="20" uuid="0e738426-a7bb-4d73-b546-482e20195660"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenconjugar_altera}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="31" y="66" width="69" height="20" uuid="2ea6db10-e3b8-42f4-aeec-150711aaca99"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenconjugar_alterb}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="31" y="86" width="69" height="20" uuid="83905a02-c336-4d4c-b4c1-396668167eb8"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenconjugar_alterc}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="31" y="106" width="69" height="20" uuid="353de7b2-c2b9-4e09-bdb9-0ce188917743"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenconjugar_alterd}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="31" y="126" width="69" height="20" uuid="00fa861f-430b-4921-a200-2e0cf853b581"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenconjugar_altere}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="46" width="31" height="20" backcolor="#FFFFFF" uuid="9890b23b-112b-48e3-a506-0e20632f0f80"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[a)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="66" width="31" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="1a9f4032-09e4-4d3a-9f9e-fad37b57cfd3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[b)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="86" width="31" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="3f750cd8-75a7-4e7d-bea3-ea5555a1e8d0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[c)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="106" width="31" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="b061ad02-9c03-4083-a7dd-caa627a11c49"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[d)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="126" width="31" height="20" forecolor="#000000" backcolor="#FFFFFF" uuid="16005f82-5562-4298-a007-768eddf4a94d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[e)]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="122" y="10" width="69" height="20" uuid="802d1c10-6293-43bb-960e-138bf234d049"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenconjugar_titulopregunta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="10" width="81" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="40eb4341-d214-4adc-ab5a-cc43a0d45062"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[examenconjugar_titulopregunta]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="21">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="bfbb9052-a718-4f9f-bf3d-dfe26b049a87"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="b41bfc21-7901-453b-a4b6-77afc573c8fc"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="36f3e3f1-854c-4165-9ff5-5e3397a7afd7"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
